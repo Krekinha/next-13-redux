@@ -10,16 +10,16 @@ import {
   incrementByAmount,
 } from "../app/GlobalRedux/Features/counter/counterSlice";
 
-export function ComponentA() {
+export function ComponentB() {
   const count = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
 
   return (
-    <div className={styles.compA}>
+    <div className={styles.compB}>
       <div className="flex justify-center rounded-lg my-3">
-        <h2 className={styles.sub}>Home Page - Comp A</h2>
+        <h2 className={styles.sub}>CompB Page - Comp B</h2>
       </div>
-      <Link href="/compb" className="text-blue-500 text-sm">
+      <Link href="/" className="text-blue-500 text-sm">
         compB
       </Link>
       <br />
